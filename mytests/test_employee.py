@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_employee(self):
         sal1 = self.emp1.getSalary()
-        self.assertEqual(sal1, 3500)
+        self.assertEqual(sal1, "3500")
 
     def test_emp_details(self):
         emp = Employee()

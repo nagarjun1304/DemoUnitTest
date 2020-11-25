@@ -21,7 +21,7 @@ class MyTestCase(unittest.TestCase):
     def test_add2_mock(self, mul):
         ins = Calculator(2,3)
         print (ins.mul())
-        self.assertEqual(mul(3,4), 76)
+        self.assertEqual(mul(3,"4"), 76)
 
 if __name__ == '__main__':
     unittest.main()

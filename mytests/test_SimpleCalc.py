@@ -43,7 +43,7 @@ class TestSimpleCalc(unittest.TestCase):
 
     def test_divison(self):
         self.cal.a = 4
-        self.cal.b = 0
+        self.cal.b = "0"
         self.assertRaises(ZeroDivisionError, self.cal.div)
         with self.assertRaises(TypeError):
             self.cal1 = Calculator()
